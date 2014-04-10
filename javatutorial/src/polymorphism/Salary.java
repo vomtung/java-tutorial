@@ -1,4 +1,4 @@
-package inheritance;
+package polymorphism;
 /* File name : Salary.java */
 public class Salary extends Employee
 {

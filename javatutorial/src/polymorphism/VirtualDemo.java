@@ -1,4 +1,4 @@
-package inheritance;
+package polymorphism;
 /* File name : VirtualDemo.java */
 public class VirtualDemo
 {
