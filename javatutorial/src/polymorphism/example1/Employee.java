@@ -1,4 +1,4 @@
-package polymorphism;
+package polymorphism.example1;
 public class Employee
 {
    private String name;

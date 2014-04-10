@@ -1,4 +1,4 @@
-package polymorphism;
+package polymorphism.example1;
 /* File name : VirtualDemo.java */
 public class VirtualDemo
 {
