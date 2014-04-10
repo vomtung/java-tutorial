@@ -1,3 +1,4 @@
+package inheritance;
 /* File name : Salary.java */
 public class Salary extends Employee
 {

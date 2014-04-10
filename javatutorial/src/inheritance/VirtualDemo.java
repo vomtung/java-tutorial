@@ -1,3 +1,4 @@
+package inheritance;
 /* File name : VirtualDemo.java */
 public class VirtualDemo
 {
