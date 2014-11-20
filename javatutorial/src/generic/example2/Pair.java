@@ -1,6 +1,10 @@
 package generic.example2;
 
 public class Pair<T,S> {
+	
+	private T first;
+	
+	private S second;
 
 	public Pair(T f, S s) {
 		first = f;
@@ -17,9 +21,6 @@ public class Pair<T,S> {
 	public S getSecond() {
 		return second;
 	}
-
-	private T first;
-	private S second;
 
 	public static void main(String[] args) {
 		Pair<String, Integer> p1;
