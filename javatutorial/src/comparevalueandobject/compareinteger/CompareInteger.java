@@ -1,4 +1,4 @@
-package comparevalueandobject;
+package comparevalueandobject.compareinteger;
 
 public class CompareInteger {
 

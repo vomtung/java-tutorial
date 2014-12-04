@@ -1,4 +1,4 @@
-package comparevalueandobject;
+package comparevalueandobject.comparestring;
 
 public class CompareString {
 

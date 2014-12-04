@@ -1,4 +1,4 @@
-package comparevalueandobject;
+package comparevalueandobject.comparelong;
 
 public class CompareLong {
 
