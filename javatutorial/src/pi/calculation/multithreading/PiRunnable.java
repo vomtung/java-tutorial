@@ -2,43 +2,57 @@ package pi.calculation.multithreading;
 
 public class PiRunnable implements Runnable {
 
-	PiCalculator pi;
-	private double minX;
-	private double maxX;
-	private int pointsToSpread;
+	private Double result=0.0;
+	private Double nStartNumber;
+	private Double numberOfThreads;
+	private Double n;
 
-	public PiRunnable(PiCalculator pi, double minX, double maxX,int pointsToSpread, boolean isQuiet) {
+	public PiRunnable(Double nStartNumber, Double numberOfThreads,Double n) {
 		super();
-		this.pi = pi;
-		this.minX = minX;
-		this.maxX = maxX;
-		this.pointsToSpread = pointsToSpread;
+		this.nStartNumber = nStartNumber;
+		this.numberOfThreads = numberOfThreads;
+		this.n=n;
 	}
 
 	@Override
 	public void run() {
-		int n = countPointsInAreaInCircle(minX, maxX, pointsToSpread);
-		pi.addToPointsInCircle(n);
+	this.result=0.0;
+		for(Double i=nStartNumber;i<=n;i=i+numberOfThreads){
+			this.result =this.result+Math.pow(-1, i)/(2*i+1);
+		}
+	
 	}
 
-	public int countPointsInAreaInCircle(double minX, double maxX,
-			int pointsCount) {
-		double x;
-		double y;
+	public Double getResult() {
+		return result;
+	}
 
-		int inCircle = 0;
+	public void setResult(Double result) {
+		this.result = result;
+	}
 
-		for (int i = 0; i < pointsCount; i++) {
-			x = Math.random() * (maxX - minX) + minX;
-			y = Math.random();
+	public Double getnStartNumber() {
+		return nStartNumber;
+	}
 
-			if (x * x + y * y <= 1) {
-				inCircle++;
-			}
-		}
+	public void setnStartNumber(Double nStartNumber) {
+		this.nStartNumber = nStartNumber;
+	}
 
-		return inCircle;
+	public Double getNumberOfThreads() {
+		return numberOfThreads;
+	}
 
+	public void setNumberOfThreads(Double numberOfThreads) {
+		this.numberOfThreads = numberOfThreads;
+	}
+
+	public Double getN() {
+		return n;
+	}
+
+	public void setN(Double n) {
+		this.n = n;
 	}
 
 }

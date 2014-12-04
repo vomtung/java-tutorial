@@ -12,7 +12,7 @@ public class LeibnizFormulaForPI {
 	public static void main(String[] args) {
 		// Create a Scanner object
 		Scanner input = new Scanner(System.in);
-
+		Long start=System.currentTimeMillis();
 		// Prompt the user to enter input
 		System.out.println("Enter number of terms");
 		double SomeNumber = input.nextDouble(); // value of i user entered
@@ -27,7 +27,7 @@ public class LeibnizFormulaForPI {
 			}
 		    System.out.println("loop:"+i+",result:"+sum);
 		}
-		System.out.println("PI="+sum*4);
+		System.out.println("PI="+sum*4+"  time:"+(System.currentTimeMillis()-start)/1000+"s");
 	}
 
 }
