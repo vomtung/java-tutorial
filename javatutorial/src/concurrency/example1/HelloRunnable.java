@@ -1,4 +1,4 @@
-package concurrency;
+package concurrency.example1;
 
 public class HelloRunnable implements Runnable {
 
